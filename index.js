@@ -1,4 +1,6 @@
-const { ApolloServer, gql } = require('apollo-server');
+import { ApolloServer, gql } from 'apollo-server';
+
+import { pages } from './data/pages.js';
 
 const typeDefs = gql`
   type Page {
@@ -21,22 +23,7 @@ const typeDefs = gql`
   }
 `;
 
-const layouts = [
-  {
-    id: 1,
-    name: "Single Page"
-  }
-]
 
-const pages = [
-  {
-    id: 1,
-    title: "Home",
-    description: "Home Page",
-    url: "/",
-    layout: layouts[0]
-  }
-]
 // Resolvers define the technique for fetching the types defined in the
 // schema. This resolver retrieves books from the "books" array above.
 const resolvers = {
