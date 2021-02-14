@@ -1,0 +1,11 @@
+
+{
+  "scripts" :{
+    "start" : "node index.js"
+  },
+
+  "dependencies": {
+    "apollo-server": "^2.21.0",
+    "graphql": "^15.5.0"
+  }
+}
