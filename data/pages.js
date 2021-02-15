@@ -16,7 +16,7 @@ export const pages = [
     layout: layouts[1]
   },
   {
-    id: 1,
+    id: 3,
     title: "Contact",
     description: "Contact Page",
     url: "/",

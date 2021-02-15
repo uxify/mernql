@@ -1,0 +1,29 @@
+type Query {
+    pages: [Page]
+    page(id:ID!): Page
+}
+type Page {
+    id: ID!
+    title: String
+    description: String
+    url: String
+    layout: Layout
+  }
+
+  type Layout {
+    id: ID
+    name: String
+  }
+
+  type Theme {
+    id: ID
+    name: String
+    colorPrimary: String
+  }
+
+  type Navigation {
+    id: ID
+    name: String
+    link: String
+  }
+  
