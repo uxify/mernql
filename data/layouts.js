@@ -1,6 +1,10 @@
 export const layouts = [
   {
     id: 1,
-    name: "Single Page"
+    name: "Full width"
+  },
+  {
+    id: 2,
+    name: "Max width"
   }
 ]

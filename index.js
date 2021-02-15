@@ -4,7 +4,7 @@ import { pages } from './data/pages.js';
 
 const typeDefs = gql`
   type Page {
-    id: Int
+    id: ID
     title: String
     description: String
     url: String
@@ -12,8 +12,20 @@ const typeDefs = gql`
   }
 
   type Layout {
-    id: Int
+    id: ID
     name: String
+  }
+
+  type Theme {
+    id: ID
+    name: String
+    colorPrimary: String
+  }
+
+  type Navigation {
+    id: ID
+    name: String
+    link: String
   }
   
 
