@@ -12,14 +12,21 @@ export const pages = [
     id: 2,
     title: "About",
     description: "About Page",
-    url: "/",
+    url: "/about",
     layout: layouts[1]
   },
   {
     id: 3,
     title: "Contact",
     description: "Contact Page",
-    url: "/",
+    url: "/contact",
+    layout: layouts[1]
+  },
+  {
+    id: 4,
+    title: "Blog",
+    description: "Blog Page",
+    url: "/blog",
     layout: layouts[1]
   }
 ]
