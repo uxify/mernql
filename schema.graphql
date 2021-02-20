@@ -1,29 +1,58 @@
 type Query {
-    pages: [Page]
-    page(id:ID!): Page
+  page(id:ID!): Page
+  main: Main
 }
+
+type Main {
+  baseUrl: String
+  theme: Theme
+  header: Header
+  footer: Footer
+}
+
+type Header {
+  logo: Logo,
+  navigation: [Navigation]
+}
+type Footer {
+  topFooter: String,
+  mainFooter: String,
+  bottomFooter: String,
+}
+
+
 type Page {
-    id: ID!
-    title: String
-    description: String
-    url: String
-    layout: Layout
-  }
+  id: ID!
+  title: String
+  description: String
+  url: String
+  layout: Layout
+}
 
-  type Layout {
-    id: ID
-    name: String
-  }
+type Layout {
+  id: ID
+  name: String
+}
 
-  type Theme {
-    id: ID
-    name: String
-    colorPrimary: String
-  }
+type Theme {
+  id: ID
+  name: String
+  colorPrimary: String
+}
 
-  type Navigation {
-    id: ID
-    name: String
-    link: String
-  }
-  
+type Navigation {
+  id: ID
+  name: String
+  link: String
+}
+
+type Section {
+  id: ID
+  name: String
+}
+
+type Logo {
+  imgUrl: String,
+	height: String,
+	width: String,
+}
