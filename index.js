@@ -12,7 +12,7 @@ const typeDefs = gql(fs.readFileSync('./schema.graphql', {encoding: 'utf8'}));
 // definition and your set of resolvers.
 const server = new ApolloServer({ typeDefs, resolvers });
 
-// The `listen` method launches a web server.
+
 server.listen().then(({ url }) => {
   console.log(`🚀  Server ready at ${url}`);
 });
