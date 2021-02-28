@@ -1,6 +1,6 @@
 type Query {
   page(id:ID!): Page
-  main: Main
+  mainContent: Main
 }
 
 type Main {
@@ -41,7 +41,7 @@ type Theme {
 }
 
 type Navigation {
-  id: ID
+  pageId: Int
   name: String
   link: String
 }
