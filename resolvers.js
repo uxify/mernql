@@ -6,7 +6,7 @@ const resolvers = {
 		page(parent, { id }) {
 			return pages.find(page => page.id == id);
 		},
-		main () {
+		mainContent () {
 			return mainContent
 		},
 	}

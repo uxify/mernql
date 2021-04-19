@@ -1,6 +1,6 @@
 type Query {
   page(id:ID!): Page
-  main: Main
+  mainContent: Main
 }
 
 type Main {
@@ -41,18 +41,41 @@ type Theme {
 }
 
 type Navigation {
-  id: ID
+  pageId: Int
   name: String
   link: String
 }
 
 type Section {
   id: ID
-  name: String
+  type: String
+  background: String
+  width: String
+  content: Int
 }
 
 type Logo {
   imgUrl: String,
 	height: String,
 	width: String,
+}
+
+type PageContent {
+  pageType: String
+  layout: String
+  sections: [Section]
+}
+
+type SliderElement {
+  id: ID
+  name: String
+  slides: [Slide]
+}
+
+type Slide {
+  id: ID
+  imgUrl: String
+  headline1: String
+  headline2: String
+  textContent: String
 }
