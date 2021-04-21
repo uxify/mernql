@@ -1,2 +1,2 @@
-# mernql
-GraphQl server using MERN stack
+# Mernql
+Headless CMS using MERN stack and GraphQl
