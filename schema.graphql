@@ -10,16 +10,26 @@ type Main {
   footer: Footer
 }
 
+type Topbar {
+  text: String
+}
+
 type Header {
   logo: Logo,
   navigation: [Navigation]
+  topBar: Topbar
+  quickLink: [QuickLink]
 }
 type Footer {
-  topFooter: String,
-  mainFooter: String,
-  bottomFooter: String,
+  topFooter: String
+  mainFooter: String
+  bottomFooter: String
 }
 
+type QuickLink {
+  name: String
+  link: String
+}
 
 type Page {
   id: ID!
