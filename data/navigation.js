@@ -5,19 +5,24 @@ const Navigation = [
 		name: "Home"
 	},
 	{
-		link: "/about",
+		link: "/news",
 		pageId: 2,
+		name: "News"
+	},
+	{
+		link: "/about",
+		pageId: 3,
 		name: "About"
 	},
 	{
-		link: "/contact",
-		pageId: 3,
-		name: "Contact"
+		link: "/events",
+		pageId: 4,
+		name: "Events & Results"
 	},
 	{
-		link: "/blog",
-		pageId: 4,
-		name: "Blog"
+		link: "/contact",
+		pageId: 5,
+		name: "Contact"
 	}
 ]
 

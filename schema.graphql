@@ -10,6 +10,7 @@ type Main {
   footer: Footer
 }
 
+
 type Topbar {
   text: String
 }
@@ -22,12 +23,19 @@ type Header {
 }
 type Footer {
   topFooter: String
-  mainFooter: String
+  mainFooter: FooterMain
   bottomFooter: String
 }
 
+type FooterMain {
+  quickLinks: [QuickLink]
+  address: [String]
+  phone: [String]
+  email: String
+}
+
 type QuickLink {
-  name: String
+  label: String
   link: String
 }
 
