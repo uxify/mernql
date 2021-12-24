@@ -7,11 +7,11 @@ const Logo = {
 }
 const QuickLink = [
 	{
-		name: 'Donate',
+		label: 'Donate',
 		link: '/donate',
 	},
 	{
-		name: 'Login',
+		label: 'Login',
 		link: '/login',
 	},
 ]

@@ -22,12 +22,19 @@ type Header {
 }
 type Footer {
   topFooter: String
-  mainFooter: String
+  mainFooter: FooterMain
   bottomFooter: String
 }
 
+type FooterMain {
+  quickLinks: [QuickLink]
+  address: [String]
+  phone: [String]
+  email: String
+}
+
 type QuickLink {
-  name: String
+  label: String
   link: String
 }
 
@@ -36,7 +43,8 @@ type Page {
   title: String
   description: String
   url: String
-  layout: Layout
+  layout: Layout,
+  pageContent: PageContent,
 }
 
 type Layout {
@@ -59,9 +67,7 @@ type Navigation {
 type Section {
   id: ID
   type: String
-  background: String
-  width: String
-  content: Int
+  content: SliderElement
 }
 
 type Logo {
@@ -73,7 +79,7 @@ type Logo {
 type PageContent {
   pageType: String
   layout: String
-  sections: [Section]
+  contentSection: [Section]
 }
 
 type SliderElement {
@@ -88,4 +94,5 @@ type Slide {
   headline1: String
   headline2: String
   textContent: String
+  callToAction: String
 }
