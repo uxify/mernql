@@ -1,6 +1,6 @@
 import { pages } from './data/pages.js';
 import { mainContent } from './data/mainContent.js'
-console.log(mainContent);
+
 const resolvers = {
 	// ColumnContent: {
   //   __resolveType(obj) {
