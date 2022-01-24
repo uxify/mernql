@@ -3,6 +3,7 @@ union Model = SliderElement | AnnouncementList | RowSection
 type RowSection {
   id: ID
   name: String
+  fullWidth: Boolean
   contentId: [ID]
 }
 

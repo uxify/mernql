@@ -11,10 +11,12 @@ export const pages = [
       {
         id: 1,
         name: 'RowContent',
+        fullWidth: true,
         contentId: [1]
       },
       {
         id: 2,
+        fullWidth: false,
         name: 'RowContent',
         contentId: [2, 3]
       }
