@@ -1,0 +1,41 @@
+union Model = SliderElement | AnnouncementList | RowSection
+
+type RowSection {
+  id: ID
+  name: String
+  fullWidth: Boolean
+  contentId: [ID]
+}
+
+type ColumnSection {
+  id: ID
+  name: String
+  columnContent: Model
+}
+
+type SliderElement {
+  id: ID
+  name: String
+  slides: [Slide]
+}
+
+type Slide {
+  id: ID
+  imgUrl: String
+  headline1: String
+  headline2: String
+  textContent: String
+  callToAction: String
+}
+
+type AnnouncementList {
+  id: ID
+  name: String
+  announcements: [Announcement]
+}
+
+type Announcement {
+	id: ID
+	publishedOn: String
+	textContent: String
+}
