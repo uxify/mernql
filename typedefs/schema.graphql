@@ -1,5 +1,7 @@
+
 type Query {
   page(id:ID!): Page
+  columnSection(id:ID!): ColumnSection
   mainContent: Main
 }
 
@@ -43,8 +45,8 @@ type Page {
   title: String
   description: String
   url: String
-  layout: Layout,
-  pageContent: PageContent,
+  layout: Layout
+  pageContent: [RowSection]
 }
 
 type Layout {
@@ -64,35 +66,9 @@ type Navigation {
   link: String
 }
 
-type Section {
-  id: ID
-  type: String
-  content: SliderElement
-}
-
 type Logo {
   imgUrl: String,
 	height: String,
 	width: String,
 }
 
-type PageContent {
-  pageType: String
-  layout: String
-  contentSection: [Section]
-}
-
-type SliderElement {
-  id: ID
-  name: String
-  slides: [Slide]
-}
-
-type Slide {
-  id: ID
-  imgUrl: String
-  headline1: String
-  headline2: String
-  textContent: String
-  callToAction: String
-}

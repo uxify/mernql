@@ -3,7 +3,10 @@ import fs from 'fs';
 
 import resolvers from './resolvers.js';
 
-const typeDefs = gql(fs.readFileSync('./schema.graphql', {encoding: 'utf8'}));
+const typeDefs = [
+  gql(fs.readFileSync('./typedefs/model.graphql', {encoding: 'utf8'})),
+	gql(fs.readFileSync('./typedefs/schema.graphql', {encoding: 'utf8'})),
+]
 
 
 

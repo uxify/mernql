@@ -1,9 +1,5 @@
-pageContent: [
+export const columnData = [
 	{
-		id: 1,
-		name: 'RowContent',
-		contentId: [
-			{
 				id: 1,
 				name: 'ColumnContent',
 				columnContent: {
@@ -20,17 +16,11 @@ pageContent: [
 						}
 					]
 				}
-			}
-		]
 	},
 	{
 		id: 2,
-		name: 'RowContent',
-		content: [
-			{
-				id: 2,
-				name: 'ColumnContent',
-				columnContent: {
+		name: 'ColumnContent',
+		columnContent: {
 					id: 2,
 					name: 'AnnouncementList',
 					announcements: [
@@ -60,26 +50,24 @@ pageContent: [
 							textContent: "We have worked hard to get our Outdoor Range ready to start training again in compliance with SportMalta Return to Sport guidelines for Covid-19 transition."
 						}
 					]
-				}
-			},
-			{
-				id: 2,
-				name: 'ColumnContent',
-				columnContent: {
+		}
+	},
+	{
+		id: 2,
+		name: 'ColumnContent',
+		columnContent: {
+			id: 2,
+			name: 'RowContent',
+			content: [
+				{
 					id: 2,
-					name: 'RowContent',
-					content: [
-						{
-							id: 2,
-							name: 'ColumnContent',
-							columnContent: {
-								id: 2,
-								name: 'AnnouncementList',
-							}
-						}
-					]
+					name: 'ColumnContent',
+					columnContent: {
+						id: 2,
+						name: 'AnnouncementList',
+					}
 				}
-			}
-		]
+			]
+		}
 	}
 ]
