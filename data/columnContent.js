@@ -58,7 +58,16 @@ export const columnData = [
 		columnContent: {
 			id: 3,
 			name: 'RowContent',
-			contentId: [2]
+			contentId: [4]
+		}
+	},
+	{
+		id: 4,
+		name: 'ColumnContent',
+		columnContent: {
+			id: 4,
+			name: 'EventBanner',
+			nextEventDate: 'August 15, 2020'
 		}
 	}
 ]

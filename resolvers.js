@@ -5,16 +5,21 @@ import { mainContent } from './data/mainContent.js'
 const resolvers = {
 	Model: {
     __resolveType(obj) {
-      if (obj.name === 'RowContent') {
-        return 'RowSection';
-      } 
-      if (obj.name === 'HomeBanner') {
-        return 'SliderElement';
-      } 
-      if (obj.name === 'AnnouncementList') {
-        return 'AnnouncementList';
+      switch (obj.name) {
+        case 'RowContent' : {
+          return 'RowSection';
+        }
+        case 'HomeBanner' : {
+          return 'SliderElement';
+        }
+        case 'AnnouncementList' : {
+          return 'AnnouncementList';
+        }
+        case 'EventBanner' : {
+          return 'EventBanner'
+        }
+        default: return null
       }
-      return null;
     },
   },
 

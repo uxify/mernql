@@ -1,4 +1,4 @@
-union Model = SliderElement | AnnouncementList | RowSection
+union Model = SliderElement | AnnouncementList | EventBanner | RowSection
 
 type RowSection {
   id: ID
@@ -38,4 +38,10 @@ type Announcement {
 	id: ID
 	publishedOn: String
 	textContent: String
+}
+
+type EventBanner {
+  id: ID
+  name: String
+  nextEventDate: String
 }
