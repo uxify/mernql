@@ -6,8 +6,8 @@ const resolvers = {
 	Model: {
     __resolveType(obj) {
       switch (obj.name) {
-        case 'RowContent' : {
-          return 'RowSection';
+        case 'SectionContent' : {
+          return 'SectionContent';
         }
         case 'HomeBanner' : {
           return 'SliderElement';
@@ -17,6 +17,9 @@ const resolvers = {
         }
         case 'EventBanner' : {
           return 'EventBanner'
+        }
+        case 'JoinUs' : {
+          return 'JoinUs'
         }
         default: return null
       }

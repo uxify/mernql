@@ -56,9 +56,22 @@ export const columnData = [
 		id: 3,
 		name: 'ColumnContent',
 		columnContent: {
-			id: 3,
-			name: 'RowContent',
-			contentId: [4]
+			id: 11,
+			name: 'SectionContent',
+			sectionContent: [
+				{
+					id: 5,
+  				name: 'RowContent',
+  				fullWidth: true,
+  				contentId: [4]
+				},
+				{
+					id: 6,
+  				name: 'RowContent',
+  				fullWidth: true,
+  				contentId: [5]
+				}
+			]
 		}
 	},
 	{
@@ -67,7 +80,24 @@ export const columnData = [
 		columnContent: {
 			id: 4,
 			name: 'EventBanner',
-			nextEventDate: 'August 15, 2020'
+			title: 'Next Event',
+			nextEventDate: 'August 15, 2020',
+			registrationStatus: 'open',
+			eventName: 'Outdoor Shooting Program - Event 3',
+			eventLocation: 'Marsa Outdoor Range',
+			registerButtonLink: '/events/12/register',
+			participantButtonLink: '/evens/12/participants'
+		}
+	},
+	{
+		id: 5,
+		name: 'ColumContent',
+		columnContent: {
+			id: 5,
+			name: 'JoinUs',
+			heading: 'Become a member',
+			actionText: 'Join Us',
+			actionLink: '/register'
 		}
 	}
 ]
