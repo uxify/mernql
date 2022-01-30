@@ -1,4 +1,10 @@
-union Model = SliderElement | AnnouncementList | EventBanner | RowSection
+union Model = SliderElement | AnnouncementList | EventBanner | JoinUs | SectionContent
+
+type SectionContent {
+  id: ID
+  name: String
+  sectionContent: [RowSection]
+}
 
 type RowSection {
   id: ID
@@ -43,5 +49,19 @@ type Announcement {
 type EventBanner {
   id: ID
   name: String
+  title: String
   nextEventDate: String
+  registrationStatus: String
+  eventName: String
+  eventLocation: String
+	registerButtonLink: String
+	participantButtonLink: String
+}
+
+type JoinUs {
+  id: ID,
+  name: String,
+  heading: String,
+  actionText: String,
+  actionLink: String
 }
