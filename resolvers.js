@@ -21,6 +21,9 @@ const resolvers = {
         case 'JoinUs' : {
           return 'JoinUs'
         }
+        case 'GenericBox' : {
+          return 'GenericBox'
+        }
         default: return null
       }
     },

@@ -1,4 +1,4 @@
-union Model = SliderElement | AnnouncementList | EventBanner | JoinUs | SectionContent
+union Model = SectionContent | GenericBox | SliderElement | AnnouncementList | EventBanner | JoinUs
 
 type SectionContent {
   id: ID
@@ -64,4 +64,22 @@ type JoinUs {
   heading: String,
   actionText: String,
   actionLink: String
+}
+
+type GenericBox {
+  id: ID,
+  name: String,
+  bgImage: String,
+  overlayColor: String,
+  textColor: String,
+  heading1: String,
+  heading2: String,
+  action: GenericBoxAction
+}
+
+type GenericBoxAction {
+  type: String,
+  image: String,
+  text: String,
+  link: String
 }
