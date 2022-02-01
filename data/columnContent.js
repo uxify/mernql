@@ -70,6 +70,12 @@ export const columnData = [
   				name: 'RowContent',
   				fullWidth: true,
   				contentId: [5]
+				},
+				{
+					id: 7,
+  				name: 'RowContent',
+  				fullWidth: true,
+  				contentId: [6, 7]
 				}
 			]
 		}
@@ -94,10 +100,56 @@ export const columnData = [
 		name: 'ColumContent',
 		columnContent: {
 			id: 5,
-			name: 'JoinUs',
-			heading: 'Become a member',
-			actionText: 'Join Us',
-			actionLink: '/register'
+			name: 'GenericBox',
+			bgImage: 'https://i.natgeofe.com/n/7bce4c9c-a0d4-4fa0-96ea-4c8f1f2fa69f/GettyImages-1227904491.jpg?w=640',
+			overlayColor: '#0271c1c4',
+			textColor: 'light',
+			heading1: 'Become a member',
+			heading2: '',
+			action: {
+				type: 'Button',
+				image: '',
+				text: 'Join Us',
+				link: '/register'
+			}
+		}
+	},
+	{
+		id: 6,
+		name: 'ColumContent',
+		columnContent: {
+			id: 6,
+			name: 'GenericBox',
+			bgImage: 'https://i.natgeofe.com/n/7bce4c9c-a0d4-4fa0-96ea-4c8f1f2fa69f/GettyImages-1227904491.jpg?w=640',
+			overlayColor: '#feff02c2',
+			textColor: 'dark',
+			heading1: 'Event Results',
+			heading2: '',
+			action: {
+				type: 'Container',
+				image: '',
+				text: '',
+				link: '/events/results'
+			}
+		}
+	},
+	{
+		id: 7,
+		name: 'ColumContent',
+		columnContent: {
+			id: 7,
+			name: 'GenericBox',
+			bgImage: 'https://i.natgeofe.com/n/7bce4c9c-a0d4-4fa0-96ea-4c8f1f2fa69f/GettyImages-1227904491.jpg?w=640',
+			overlayColor: '#ffffffe0',
+			textColor: 'dark',
+			heading1: 'National Record',
+			heading2: '',
+			action: {
+				type: 'Container',
+				image: '',
+				text: '',
+				link: '/records'
+			}
 		}
 	}
 ]
