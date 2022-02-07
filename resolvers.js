@@ -24,6 +24,9 @@ const resolvers = {
         case 'GenericBox' : {
           return 'GenericBox'
         }
+        case 'VideoContent': {
+          return 'VideoContent'
+        }
         default: return null
       }
     },

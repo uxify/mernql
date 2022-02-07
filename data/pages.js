@@ -19,6 +19,12 @@ export const pages = [
         fullWidth: false,
         name: 'RowContent',
         contentId: [2, 3]
+      },
+      {
+        id: 3,
+        fullWidth: false,
+        name: 'RowContent',
+        contentId: [8, 9]
       }
     ]
   },

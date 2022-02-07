@@ -151,5 +151,37 @@ export const columnData = [
 				link: '/records'
 			}
 		}
+	},
+	{
+		id: 8,
+		name: 'ColumContent',
+		columnContent: {
+			id: 8,
+			name: 'VideoContent',
+			videoLink: '',
+			thumbnail: 'https://i.natgeofe.com/n/7bce4c9c-a0d4-4fa0-96ea-4c8f1f2fa69f/GettyImages-1227904491.jpg?w=640',
+			height: '480px',
+			width: '640px'
+		}
+	},
+	{
+		id: 9,
+		name: 'ColumContent',
+		columnContent: {
+			id: 9,
+			name: 'GenericBox',
+			bgImage: '',
+			overlayColor: '',
+			textColor: 'dark',
+			heading1: 'Archery News',
+			heading2: '',
+			text: 'John Schembri - President, Archery Association of Malta speaking about how archery has progressed over the years in Malta.',
+			action: {
+				type: '',
+				image: '',
+				text: '',
+				link: '',
+			}
+		}
 	}
 ]
