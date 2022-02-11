@@ -1,9 +1,9 @@
 export const columnData = [
 	{
-		id: 1,
+		id: 101,
 		name: 'ColumnContent',
 		columnContent: {
-			id: 1,
+			id: 102,
 			name: 'HomeBanner',
 			slides: [
 				{
@@ -18,10 +18,10 @@ export const columnData = [
 		}
 	},
 	{
-		id: 2,
+		id: 103,
 		name: 'ColumnContent',
 		columnContent: {
-			id: 2,
+			id: 104,
 			name: 'AnnouncementList',
 			announcements: [
 				{
@@ -53,38 +53,38 @@ export const columnData = [
 		}
 	},
 	{
-		id: 3,
+		id: 105,
 		name: 'ColumnContent',
 		columnContent: {
-			id: 11,
+			id: 106,
 			name: 'SectionContent',
 			sectionContent: [
 				{
-					id: 5,
-  				name: 'RowContent',
-  				fullWidth: true,
-  				contentId: [4]
+					id: 107,
+					name: 'RowContent',
+					fullWidth: true,
+					contentId: [110]
 				},
 				{
-					id: 6,
-  				name: 'RowContent',
-  				fullWidth: true,
-  				contentId: [5]
+					id: 108,
+					name: 'RowContent',
+					fullWidth: true,
+					contentId: [112]
 				},
 				{
-					id: 7,
-  				name: 'RowContent',
-  				fullWidth: true,
-  				contentId: [6, 7]
+					id: 109,
+					name: 'RowContent',
+					fullWidth: true,
+					contentId: [114, 116]
 				}
 			]
 		}
 	},
 	{
-		id: 4,
+		id: 110,
 		name: 'ColumnContent',
 		columnContent: {
-			id: 4,
+			id: 111,
 			name: 'EventBanner',
 			title: 'Next Event',
 			nextEventDate: 'August 15, 2020',
@@ -96,10 +96,10 @@ export const columnData = [
 		}
 	},
 	{
-		id: 5,
+		id: 112,
 		name: 'ColumContent',
 		columnContent: {
-			id: 5,
+			id: 113,
 			name: 'GenericBox',
 			bgImage: 'https://i.natgeofe.com/n/7bce4c9c-a0d4-4fa0-96ea-4c8f1f2fa69f/GettyImages-1227904491.jpg?w=640',
 			overlayColor: '#0271c1c4',
@@ -115,10 +115,10 @@ export const columnData = [
 		}
 	},
 	{
-		id: 6,
+		id: 114,
 		name: 'ColumContent',
 		columnContent: {
-			id: 6,
+			id: 115,
 			name: 'GenericBox',
 			bgImage: 'https://i.natgeofe.com/n/7bce4c9c-a0d4-4fa0-96ea-4c8f1f2fa69f/GettyImages-1227904491.jpg?w=640',
 			overlayColor: '#feff02c2',
@@ -134,10 +134,10 @@ export const columnData = [
 		}
 	},
 	{
-		id: 7,
+		id: 116,
 		name: 'ColumContent',
 		columnContent: {
-			id: 7,
+			id: 117,
 			name: 'GenericBox',
 			bgImage: 'https://i.natgeofe.com/n/7bce4c9c-a0d4-4fa0-96ea-4c8f1f2fa69f/GettyImages-1227904491.jpg?w=640',
 			overlayColor: '#ffffffe0',
@@ -153,10 +153,10 @@ export const columnData = [
 		}
 	},
 	{
-		id: 8,
+		id: 118,
 		name: 'ColumContent',
 		columnContent: {
-			id: 8,
+			id: 119,
 			name: 'VideoContent',
 			videoLink: '',
 			thumbnail: 'https://i.natgeofe.com/n/7bce4c9c-a0d4-4fa0-96ea-4c8f1f2fa69f/GettyImages-1227904491.jpg?w=640',
@@ -165,10 +165,10 @@ export const columnData = [
 		}
 	},
 	{
-		id: 9,
+		id: 120,
 		name: 'ColumContent',
 		columnContent: {
-			id: 9,
+			id: 121,
 			name: 'GenericBox',
 			bgImage: '',
 			overlayColor: '',
@@ -182,6 +182,52 @@ export const columnData = [
 				text: '',
 				link: '',
 			}
+		}
+	},
+	{
+		id: 122,
+		name: 'ColumContent',
+		columnContent: {
+			id: 123,
+			name: 'GenericWithImage',
+			bgImage: '',
+			overlayColor: '',
+			textColor: 'dark',
+			heading: 'Affiliations',
+			text: '',
+			imageList: [
+				{
+					image: 'https://i.natgeofe.com/n/7bce4c9c-a0d4-4fa0-96ea-4c8f1f2fa69f/GettyImages-1227904491.jpg?w=320',
+					link: 'http://www.worldarcher.com'
+				},
+				{
+					image: 'https://i.natgeofe.com/n/7bce4c9c-a0d4-4fa0-96ea-4c8f1f2fa69f/GettyImages-1227904491.jpg?w=320',
+					link: 'https://nocmalta.org/'
+				},
+				{
+					image: 'https://i.natgeofe.com/n/7bce4c9c-a0d4-4fa0-96ea-4c8f1f2fa69f/GettyImages-1227904491.jpg?w=320',
+					link: 'https://sportmalta.mt/'
+				}
+			]
+		}
+	},
+	{
+		id: 124,
+		name: 'ColumContent',
+		columnContent: {
+			id: 125,
+			name: 'GenericWithImage',
+			bgImage: '',
+			overlayColor: '',
+			textColor: 'dark',
+			heading: 'Connect with us',
+			text: '',
+			imageList: [
+				{
+					image: 'https://i.natgeofe.com/n/7bce4c9c-a0d4-4fa0-96ea-4c8f1f2fa69f/GettyImages-1227904491.jpg?w=320',
+					link: 'http://www.facebook.com'
+				},
+			]
 		}
 	}
 ]

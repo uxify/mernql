@@ -1,15 +1,26 @@
 {
+  "name": "MernQl",
+  "version": "0.1.0",
+  "description": "MernQl",
+  "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js"
   },
   "type": "module",
-  
   "dependencies": {
     "apollo-server": "^2.21.0",
-    "graphql": "^15.5.0"
+    "graphql": "^15.5.0",
+    "mongodb": "4.3",
+    "pg": "^8.7.3"
   },
   "devDependencies": {
-    "nodemon": "^2.0.7"
+    "@babel/plugin-proposal-class-properties": "^7.16.7",
+    "@babel/plugin-proposal-export-default-from": "^7.16.7",
+    "@babel/plugin-proposal-object-rest-spread": "^7.16.7",
+    "@babel/plugin-syntax-import-meta": "^7.10.4",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "nodemon": "^2.0.7",
+    "typescript": "^4.5.5"
   }
 }
