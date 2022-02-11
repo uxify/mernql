@@ -1,4 +1,4 @@
-union Model = SectionContent | GenericBox | SliderElement | AnnouncementList | EventBanner | JoinUs
+union Model = SectionContent | GenericBox | SliderElement | AnnouncementList | EventBanner | VideoContent | GenericWithImage
 
 type SectionContent {
   id: ID
@@ -10,6 +10,8 @@ type RowSection {
   id: ID
   name: String
   fullWidth: Boolean
+  pageSection: Boolean
+  bgColor: String
   contentId: [ID]
 }
 
@@ -58,14 +60,6 @@ type EventBanner {
 	participantButtonLink: String
 }
 
-type JoinUs {
-  id: ID,
-  name: String,
-  heading: String,
-  actionText: String,
-  actionLink: String
-}
-
 type GenericBox {
   id: ID,
   name: String,
@@ -74,6 +68,7 @@ type GenericBox {
   textColor: String,
   heading1: String,
   heading2: String,
+  text: String,
   action: GenericBoxAction
 }
 
@@ -81,5 +76,30 @@ type GenericBoxAction {
   type: String,
   image: String,
   text: String,
+  link: String
+}
+
+type VideoContent {
+  id: ID,
+  name: String,
+  videoLink: String,
+  thumbnail: String,
+  height: String,
+  width: String,
+}
+
+type GenericWithImage {
+  id: ID,
+  name: String,
+  bgImage: String,
+  overlayColor: String,
+  textColor: String,
+  heading: String,
+  text: String,
+  imageList : [ImageLink]
+}
+
+type ImageLink {
+  image: String,
   link: String
 }
