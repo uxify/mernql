@@ -1,11 +1,9 @@
-import { columnData } from './data/columnContent.js';
-import { mainContent } from './data/mainContent.js';
 
-import { 
-  GetMainContent, 
-  GetPageContent, 
+import {
+  GetMainContent,
+  GetPageContent,
   GetColumnContent,
-  PostColumnContent 
+  PostColumnContent
 } from './db/Models/index.js';
 
 const resolvers = {
@@ -42,28 +40,18 @@ const resolvers = {
   },
 
   Query: {
-    async page(parent, { id }) {
-      if (parseInt(id) === 3) {
-        //console.log('Post')
-        //PostColumnContent();
-      }
-      else {
-        return GetPageContent(id).then((res) => {
-          return res;
-        }).catch(() => {
-          return {}
-        });
-      }
+    page: async (parent, { id }) => {
+      // if (parseInt(id) === 3) {
+      //   console.log('Post')
+      //   return PostColumnContent();
+      // }
+      return await GetPageContent(id)
     },
-    async columnSection(parent, { id }) {
-      return GetColumnContent(id).then((res) => {
-        return res;
-      }).catch(()=>{
-        return {}
-      })
+    columnSection: async (parent, { id }) => {
+      return await GetColumnContent(id)
     },
-    mainContent() {
-      return GetMainContent()
+    mainContent: async () => {
+      return await GetMainContent()
     }
   }
 };
