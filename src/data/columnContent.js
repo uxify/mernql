@@ -229,5 +229,21 @@ export const columnData = [
 				},
 			]
 		}
+	},
+	{
+		id: 131,
+		name: 'ColumnContent',
+		columnContent: {
+			id: 132,
+			name: 'Sidebar',
+			sidebarContent: [
+				{
+					id: 133,
+					name: 'RowContent',
+					fullWidth: true,
+					contentId: [112]
+				}
+			]
+		}
 	}
 ]

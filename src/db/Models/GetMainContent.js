@@ -17,7 +17,6 @@ const GetHeaderContent = async () => {
 	const query = { name: 'HeaderContent' }
 	const headerData =  await GetData('MainContent', query);
 	const navigationData = await GetHeaderNavigation();
-	console.log('nav', navigationData)
 	return {...headerData, navigation: navigationData};
 
 }

@@ -12,12 +12,14 @@ export const GetAllData = async (collection, query = {}, options = {}) => {
 }
 
 export const PostData = async (collection, docs, options = {}) => {
-	try {
-		await client.connect();
-		const database = client.db('AAM_QL');
-		const cl = database.collection(collection);
-		const result = await cl.insertMany(docs);
-	} finally {
-		await client.close();
-	}
+	await client.connect();
+	const database = client.db('AAM_QL');
+	const cl = database.collection(collection);
+	const result = await cl.insertMany(docs);
+}
+
+export const GetLastId = async (collection) => {
+	const lastEntry = await database.collection(collection).find({}).sort({ _id: -1 }).limit(1).toArray();
+	const lastId = lastEntry.length === 1 ? lastEntry[0].id : 0;
+	return lastId;
 }
