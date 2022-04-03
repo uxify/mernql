@@ -3,7 +3,13 @@ import {
   GetMainContent,
   GetPageContent,
   GetColumnContent,
-  PostColumnContent
+  GetAnnouncementList,
+  GetAnnouncement,
+  GetEventList,
+  GetEvent,
+  PostColumnContent,
+  PostAnnouncement,
+  PostEvent
 } from './db/Models/index.js';
 
 const resolvers = {
@@ -18,6 +24,9 @@ const resolvers = {
         }
         case 'AnnouncementList': {
           return 'AnnouncementList';
+        }
+        case 'EventList': {
+          return 'EventList';
         }
         case 'EventBanner': {
           return 'EventBanner'
@@ -34,6 +43,9 @@ const resolvers = {
         case 'GenericWithImage': {
           return 'GenericWithImage'
         }
+        case 'Sidebar': {
+          return 'Sidebar'
+        }
         default: return null
       }
     },
@@ -41,10 +53,6 @@ const resolvers = {
 
   Query: {
     page: async (parent, { id }) => {
-      // if (parseInt(id) === 3) {
-      //   console.log('Post')
-      //   return PostColumnContent();
-      // }
       return await GetPageContent(id)
     },
     columnSection: async (parent, { id }) => {
@@ -52,7 +60,50 @@ const resolvers = {
     },
     mainContent: async () => {
       return await GetMainContent()
+    },
+    announcementList: async (parent, { limit }) => {
+      return await GetAnnouncementList({ limit })
+    },
+    announcement: async (parent, { id }) => {
+      return await GetAnnouncement({ id })
+    },
+    eventList: async (parent, { limit }) => {
+      return await GetEventList({ limit })
+    },
+    event: async (parent, { id }) => {
+      return await GetEvent({ id })
     }
+  },
+
+  Mutation: {
+    addColumnContent: async (parent) => {
+      return await PostColumnContent();
+    },
+    addAnnouncement: async (parent, {
+      publishedOn,
+      title,
+      textContent
+    }) => {
+      return await PostAnnouncement({
+        publishedOn,
+        title,
+        textContent
+      });
+    },
+
+    addEvent: async (parent, {
+      eventName,
+      eventLocation,
+      eventDate,
+      description,
+    }) => {
+      return await PostEvent({
+        eventName,
+        eventLocation,
+        eventDate,
+        description,
+      });
+    },
   }
 };
 

@@ -3,6 +3,26 @@ type Query {
   page(id:ID!): Page
   columnSection(id:ID!): ColumnSection
   mainContent: Main
+  announcementList(limit: Int): [Announcement]
+  announcement(id: ID): Announcement
+  eventList(limit: Int): [Event]
+  event(id: ID): Event
+}
+
+type Mutation {
+  addColumnContent(id: ID): ColumnSection
+  addAnnouncement(
+    publishedOn: String
+    title: String
+	  textContent: String
+  ): Announcement
+  
+  addEvent(
+    eventName: String
+    eventLocation: String
+    eventDate: String
+    description: String
+  ): Event
 }
 
 type Main {

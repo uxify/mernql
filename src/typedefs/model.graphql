@@ -1,4 +1,4 @@
-union Model = SectionContent | GenericBox | SliderElement | AnnouncementList | EventBanner | VideoContent | GenericWithImage
+union Model = SectionContent | GenericBox | SliderElement | AnnouncementList | EventList | EventBanner | VideoContent | GenericWithImage | Sidebar
 
 type SectionContent {
   id: ID
@@ -45,6 +45,7 @@ type AnnouncementList {
 type Announcement {
 	id: ID
 	publishedOn: String
+  title: String
 	textContent: String
 }
 
@@ -102,4 +103,24 @@ type GenericWithImage {
 type ImageLink {
   image: String,
   link: String
+}
+
+type Sidebar {
+  id: ID
+  name: String
+  sidebarContent: [RowSection]
+}
+
+type Event {
+  id: ID
+  eventName: String
+  eventLocation: String
+  eventDate: String
+  description: String
+}
+
+type EventList {
+  id: ID
+  name: String
+  events: [Event]
 }
